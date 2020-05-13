@@ -1,6 +1,6 @@
 {
-  "name": "prettier-plugin-organize-imports",
-  "version": "1.0.3",
+  "name": "@jonny/prettier-plugin-organize-imports",
+  "version": "1.0.5",
   "description": "Make prettier organize your imports using the TypeScript language service API.",
   "keywords": [
     "prettier",

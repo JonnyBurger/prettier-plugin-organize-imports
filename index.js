@@ -28,7 +28,10 @@ const applyChanges = (input, changes) =>
 		const head = text.slice(0, change.span.start);
 		const tail = text.slice(change.span.start + change.span.length);
 
-		return `${head}${change.newText}${tail}`;
+		return [head, change.newText, tail]
+			.filter(Boolean)
+			.join('')
+			.replace(/undefined/g, '');
 	}, input);
 
 class ServiceHost {
